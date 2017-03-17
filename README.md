@@ -1,4 +1,5 @@
 #Learning Microsoft Cognitive Services
+
 This is the code repository for [Learning Microsoft Cognitive Services](https://www.packtpub.com/application-development/learning-microsoft-cognitive-services?utm_source=github&utm_medium=repository&utm_campaign=9781786467843), published by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the supporting project files necessary to work through the book from start to finish.
 ## About the Book
 This book will introduce you to all 21 APIs released as part of Cognitive Services platform and show you how to leverage their capabilities. More importantly, you’ll see how the power of these APIs can be combined to build real-world apps that have cognitive capabilities. The book is split into three sections: computer vision, speech recognition and language processing, and knowledge and search.
