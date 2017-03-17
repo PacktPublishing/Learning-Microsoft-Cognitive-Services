@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="End_to_End.View.EntityLinkingView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:End_to_End.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="785">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="220" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="220" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Input text" FontSize="14" FontWeight="Bold" />
+        <TextBox Grid.Row="1" Text="{Binding EntityLinkingVm.InputText}" Margin="5" TextWrapping="Wrap" />
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="5, 0, 0, 0" >
+            <Label Content="Entity:" />
+            <TextBox Text="{Binding EntityLinkingVm.Selection}" Width="100" Margin="5, 0, 5, 0" />
+            <Label Content="Offset:" />
+            <TextBox Text="{Binding EntityLinkingVm.Offset}" Width="100" Margin="5, 0, 5, 0" />
+            <Button Content="Link entities" Command="{Binding EntityLinkingVm.LinkEntitiesCommand}" HorizontalAlignment="Left" Width="100" />
+        </StackPanel>
+
+        <Label Grid.Row="3" Content="Results" FontSize="14" FontWeight="Bold" />
+        <TextBox Grid.Row="4" Text="{Binding EntityLinkingVm.ResultText}" Margin="5" TextWrapping="Wrap" />
+    </Grid>
+</UserControl>

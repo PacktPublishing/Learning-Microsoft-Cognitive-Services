@@ -1,0 +1,17 @@
+﻿<Window x:Class="Chapter3.View.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chapter3.View"
+        xmlns:viewmodel="clr-namespace:Chapter3.ViewModel"
+        mc:Ignorable="d"
+        Title="Chapter3" Height="500" Width="710">
+    <Window.DataContext>
+        <viewmodel:MainViewModel />
+    </Window.DataContext>
+    <StackPanel>
+        <Label FontSize="18" FontWeight="Bold" Content="Video Operations" />
+        <local:VideoView />
+    </StackPanel>
+</Window>

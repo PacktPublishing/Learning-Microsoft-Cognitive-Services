@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="Chapter3.View.VideoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Chapter3.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="470" d:DesignWidth="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="295" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <Label Content="Browse video:" />
+            <Button Content="Browse" Command="{Binding VideoVm.BrowseVideoCommand}" Margin="5, 0, 5, 0" />
+            <Label Content="Video Operation:" />
+            <ComboBox ItemsSource="{Binding VideoVm.VideoOperations}" SelectedItem="{Binding VideoVm.SelectedVideoOperation}" Margin="5, 5, 5, 0" />
+            <Button Content="Execute operation" Command="{Binding VideoVm.ExecuteVideoOperationCommand}" Margin="5, 5, 5, 0" />
+            <MediaElement Source="{Binding VideoVm.VideoSource}" x:Name="SourceVideo" SourceUpdated="SourceVideo_SourceUpdated" 
+                          Loaded="SourceVideo_Loaded" LoadedBehavior="Manual" Margin="5, 5, 5, 0" Height="230" Visibility="Visible" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <Label Content="Operation result" />
+            <TextBox Text="{Binding VideoVm.Result}" Height="200" Margin="5, 0, 5, 0" />
+            <MediaElement Source="{Binding VideoVm.ResultVideoSource}" LoadedBehavior="Manual" SourceUpdated="MediaElement_SourceUpdated"
+                          x:Name="ResultVideo" Loaded="ResultVideo_Loaded"  Margin="5, 5, 5, 0" Height="230" />
+        </StackPanel>
+    </Grid>
+</UserControl>
