@@ -33,3 +33,7 @@ To follow the examples in this book you will need Visual Studio 2015 Community E
 
 * [Building Dashboards with Microsoft Dynamics GP 2016 - Second Edition](https://www.packtpub.com/application-development/building-dashboards-microsoft-dynamics-gp-2016-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781786467614)
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to download a free PDF copy of this book.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781786467843">https://packt.link/free-ebook/9781786467843 </a> </p>
